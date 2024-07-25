@@ -1,0 +1,159 @@
+{
+   "sponsors":[
+    {
+     "name":"zapier",
+     "image": "Logozapier.png",
+     "id":1
+    },
+    {
+     "name":"spotify",
+     "image": "Logospotify.png",
+     "id":2
+    },
+    {
+     "name":"zoom",
+     "image": "Logozoom.png",
+     "id":2
+    },
+    {
+     "name":"amazon",
+     "image": "Logoamazon.png",
+     "id":4
+    },
+    {
+     "name":"adobe",
+     "image": "LogoAdobe.png",
+     "id":5
+    },
+    {
+     "name":"notion",
+     "image": "Logonotion.png",
+     "id":6
+    },
+    {
+     "name":"netflix",
+     "image": "Cardnetflix.png",
+     "id":7
+    }
+   ],
+   "benefits":[
+    {
+    "name":"Flexible Learning Schedule",
+    "tag": "01",
+    "details":"Fit your coursework around your existing commitments and obligations.",
+    "id":1
+   },
+    {
+    "name":"Expert Instruction",
+    "tag": "02",
+    "details":"Learn from industry experts who have hands-on experience in design and development.",
+    "id":2
+   },
+    {
+    "name":"Diverse Course Offerings",
+    "tag": "03",
+    "details":"Explore a wide range of design and development courses covering various topics.",
+    "id":3
+   },
+    {
+    "name":"Updated Curriculum",
+    "tag": "04",
+    "details":"Access courses with up-to-date content reflecting the latest trends and industry practices.",
+    "id":4
+   },
+    {
+    "name":"Practical Projects and Assignments",
+    "tag": "05",
+    "details":"Develop a portfolio showcasing your skills and abilities to potential employers.",
+    "id":5
+   },
+    {
+    "name":"Interactive Learning Environment",
+    "tag": "06",
+    "details":"Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.",
+    "id":6
+   }
+],
+    "courses":[
+    {
+     "name":"Web Design Fundamentals",
+     "duration":"4 Weeks",
+     "level":"Beginner",
+     "tutor":"By John Smith",
+     "details": "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+     "image":"Imagecourse1.png",
+     "id":1
+    },
+    {
+     "name":"UI/UX Design",
+     "duration":"6 Weeks",
+     "level":"Intermediate",
+     "tutor":"By Emily Johnson",
+     "details": "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.",
+     "image":"Imagecourse2.png",
+     "id":2
+    },
+    {
+     "name":"Mobile App Development",
+     "duration":"8 Weeks",
+     "level":"Intermediate",
+     "tutor":"By David Brown",
+     "details": "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.",
+     "image":"Imagecourse2-1.png",
+     "id":3
+    },
+    {
+     "name":"Graphic Design for Beginners",
+     "duration":"10 Weeks",
+     "level":"Beginners",
+     "tutor":"By Sarah Thompson",
+     "details": "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.",
+     "image":"Imagecourse4.png",
+     "id":4
+    },
+    {
+     "name":"Graphic Design for Beginners",
+     "duration":"10 Weeks",
+     "level":"Intermediate",
+     "tutor":"By Michael Adams",
+     "details": "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.",
+     "image":"Imagecourse5.png",
+     "id":5
+    },
+     {
+     "name":"Advanced JavaScript",
+     "duration":"6 Weeks",
+     "level":"Advance",
+     "tutor":"By Jennifer Wilson",
+     "details": "Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.",
+     "image":"Imagecourse6.png",
+     "id":6
+    }
+    ],
+    "testimonials":[
+    {
+     "testimony":"The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
+     "image":"imagetestimonial1.png",
+     "name":"Sarah L",
+     "id":1
+    },
+    {
+     "testimony":"The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!",
+     "image":"imagetestimonial2.png",
+     "name":"Jason M",
+     "id":2
+    },
+    {
+     "testimony":"The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!",
+     "image":"imagetestimonial3.png",
+     "name":"Emily R",
+     "id":3
+    },
+    {
+     "testimony":"I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!",
+     "image":"imagetestimonial4.png",
+     "name":"Michael K",
+     "id":4
+    }
+  ]
+}
