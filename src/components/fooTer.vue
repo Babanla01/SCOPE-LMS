@@ -1,6 +1,6 @@
 <template>
   <footer class="footer section">
-    <div class="footer__container container grid">
+    <div class="footer__container container__ grid">
       <div class="footer__address grid">
         <img src="/images/Logologo.png" alt="" class="footer__img" />
         <div class="adresses grid">

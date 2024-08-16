@@ -76,57 +76,106 @@
 ],
     "courses":[
     {
-     "name":"Web Design Fundamentals",
-     "duration":"4 Weeks",
-     "level":"Beginner",
-     "tutor":"By John Smith",
-     "details": "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
-     "image":"Imagecourse1.png",
-     "id":1
+    "name":"Web Design Fundamentals",
+    "slug":"WebDevelopment",    
+    "duration":"4 Weeks",
+    "level":"Beginner",
+    "tutor":"By John Smith",
+    "details": "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+    "image":"Imagecourse1.png",
+    "img1":"ImageWeb1.png",
+    "img2":"ImageWeb2.png",
+    "img3":"ImageWeb3.png",
+    "courseOpen":"Web Design Course",
+    "detail":"Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum",
+    "coursesDetails":[{"number":"01","topic":"Introduction to UI/UX Design","descriptions":[{"desc":"Understanding UI/UX Design Principles","lesson":"Lesson 01","time":"45 Minutes"},{"desc":"Importance of User-Centered Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"The Role of UI/UX Design in Product Development","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"02","topic":"User Research and Analysis","descriptions":[{"desc":"Conducting User Research and Interviews","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing User Needs and Behavior","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating User Personas and Scenarios","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"03","topic":"Wireframing and Prototyping","descriptions":[{"desc":"Introduction to Wireframing Tools and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Creating Low-Fidelity Wireframes","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Prototyping and Interactive Mockups","lesson":"Lesson 03","time":"1 Hour"}]},{"number":"04","topic":"Visual Design and BrandingVisual Design and Branding","descriptions":[{"desc":"Color Theory and Typography in UI Design","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Visual Hierarchy and Layout Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating a Strong Brand Identity","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"05","topic":"Usability Testing and Iteration","descriptions":[{"desc":"Usability Testing Methods and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing Usability Test Results","lesson":"Lesson 02","time":"45 Minutes"},{"desc":"Iterating and Improving UX Designs","lesson":"Lesson 03","time":"45 Minutes"}]}],
+    "tags":[{"val": "01","cur":"Introduction to HTML"},{"val": "02","cur":"Styling with CSS"},{"val": "03","cur":"Introduction to Responsive Design"},{"val": "04","cur":"Design Principles for Web"},{"val": "05","cur":"Building a Basic Website"}],
+    "id":1
     },
     {
      "name":"UI/UX Design",
+    "slug":"UIUXDesign",     
      "duration":"6 Weeks",
      "level":"Intermediate",
      "tutor":"By Emily Johnson",
      "details": "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.",
      "image":"Imagecourse2.png",
+      "img1":"ImageUI1.png",
+    "img2":"ImageUI2.png",
+    "img3":"ImageUI3.png",
+     "courseOpen":"UI/UX Design Course",
+    "detail":"Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum",
+    "coursesDetails":[{"number":"01","topic":"Introduction to UI/UX Design","descriptions":[{"desc":"Understanding UI/UX Design Principles","lesson":"Lesson 01","time":"45 Minutes"},{"desc":"Importance of User-Centered Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"The Role of UI/UX Design in Product Development","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"02","topic":"User Research and Analysis","descriptions":[{"desc":"Conducting User Research and Interviews","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing User Needs and Behavior","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating User Personas and Scenarios","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"03","topic":"Wireframing and Prototyping","descriptions":[{"desc":"Introduction to Wireframing Tools and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Creating Low-Fidelity Wireframes","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Prototyping and Interactive Mockups","lesson":"Lesson 03","time":"1 Hour"}]},{"number":"04","topic":"Visual Design and BrandingVisual Design and Branding","descriptions":[{"desc":"Color Theory and Typography in UI Design","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Visual Hierarchy and Layout Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating a Strong Brand Identity","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"05","topic":"Usability Testing and Iteration","descriptions":[{"desc":"Usability Testing Methods and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing Usability Test Results","lesson":"Lesson 02","time":"45 Minutes"},{"desc":"Iterating and Improving UX Designs","lesson":"Lesson 03","time":"45 Minutes"}]}],
+    "tags":[{"val": "01","cur":"Introduction to UI/UX Design"},{"val": "02","cur":"User Research and Personas"},{"val": "03","cur":"Wireframing and Prototyping"},{"val": "04","cur":"Visual Design and Branding"},{"val": "05","cur":"Usability Testing and Iteration"}],
      "id":2
     },
     {
      "name":"Mobile App Development",
+    "slug":"MobileApp",     
      "duration":"8 Weeks",
      "level":"Intermediate",
      "tutor":"By David Brown",
      "details": "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.",
      "image":"Imagecourse2-1.png",
+      "img1":"ImageMOBILE1.png",
+    "img2":"ImageMOBILE2.png",
+    "img3":"ImageMOBILE3.png",
+     "courseOpen":"Mobile App Development Course",
+    "detail":"Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum",
+    "coursesDetails":[{"number":"01","topic":"Introduction to UI/UX Design","descriptions":[{"desc":"Understanding UI/UX Design Principles","lesson":"Lesson 01","time":"45 Minutes"},{"desc":"Importance of User-Centered Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"The Role of UI/UX Design in Product Development","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"02","topic":"User Research and Analysis","descriptions":[{"desc":"Conducting User Research and Interviews","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing User Needs and Behavior","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating User Personas and Scenarios","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"03","topic":"Wireframing and Prototyping","descriptions":[{"desc":"Introduction to Wireframing Tools and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Creating Low-Fidelity Wireframes","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Prototyping and Interactive Mockups","lesson":"Lesson 03","time":"1 Hour"}]},{"number":"04","topic":"Visual Design and BrandingVisual Design and Branding","descriptions":[{"desc":"Color Theory and Typography in UI Design","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Visual Hierarchy and Layout Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating a Strong Brand Identity","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"05","topic":"Usability Testing and Iteration","descriptions":[{"desc":"Usability Testing Methods and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing Usability Test Results","lesson":"Lesson 02","time":"45 Minutes"},{"desc":"Iterating and Improving UX Designs","lesson":"Lesson 03","time":"45 Minutes"}]}],
+    "tags":[{"val": "01","cur":"Introduction to Mobile App Development"},{"val": "02","cur":"Fundamentals of Swift Programming (iOS)"},{"val": "03","cur":"Fundamentals of Kotlin Programming (Android)"},{"val": "04","cur":"Building User Interfaces"},{"val": "05","cur":"App Deployment and Testing"}],
      "id":3
     },
     {
      "name":"Graphic Design for Beginners",
+    "slug":"GraphicsDesign",     
      "duration":"10 Weeks",
      "level":"Beginners",
      "tutor":"By Sarah Thompson",
      "details": "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.",
      "image":"Imagecourse4.png",
+      "img1":"ImageGRA1.png",
+    "img2":"ImageGRA2.png",
+    "img3":"ImageGRA3.png",
+     "courseOpen":"Graphic Design  Course",
+    "detail":"Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum",
+    "coursesDetails":[{"number":"01","topic":"Introduction to UI/UX Design","descriptions":[{"desc":"Understanding UI/UX Design Principles","lesson":"Lesson 01","time":"45 Minutes"},{"desc":"Importance of User-Centered Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"The Role of UI/UX Design in Product Development","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"02","topic":"User Research and Analysis","descriptions":[{"desc":"Conducting User Research and Interviews","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing User Needs and Behavior","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating User Personas and Scenarios","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"03","topic":"Wireframing and Prototyping","descriptions":[{"desc":"Introduction to Wireframing Tools and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Creating Low-Fidelity Wireframes","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Prototyping and Interactive Mockups","lesson":"Lesson 03","time":"1 Hour"}]},{"number":"04","topic":"Visual Design and BrandingVisual Design and Branding","descriptions":[{"desc":"Color Theory and Typography in UI Design","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Visual Hierarchy and Layout Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating a Strong Brand Identity","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"05","topic":"Usability Testing and Iteration","descriptions":[{"desc":"Usability Testing Methods and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing Usability Test Results","lesson":"Lesson 02","time":"45 Minutes"},{"desc":"Iterating and Improving UX Designs","lesson":"Lesson 03","time":"45 Minutes"}]}],
+    "tags":[{"val": "01","cur":"Introduction to Graphic Design"},{"val": "02","cur":"Typography and Color Theory"},{"val": "03","cur":"Layout Design and Composition"},{"val": "04","cur":"Image Editing and Manipulation"},{"val": "05","cur":"Designing for Print and Digital Media"}],
      "id":4
     },
     {
-     "name":"Graphic Design for Beginners",
+     "name":"Front-End Web Development",
+    "slug":"FrontEnd",     
      "duration":"10 Weeks",
      "level":"Intermediate",
      "tutor":"By Michael Adams",
      "details": "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.",
      "image":"Imagecourse5.png",
+      "img1":"ImageFRONT1.png",
+    "img2":"ImageFRONT2.png",
+    "img3":"ImageFRONT3.png",
+     "courseOpen":"Front-End Web Development Course",
+    "detail":"Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum",
+    "coursesDetails":[{"number":"01","topic":"Introduction to UI/UX Design","descriptions":[{"desc":"Understanding UI/UX Design Principles","lesson":"Lesson 01","time":"45 Minutes"},{"desc":"Importance of User-Centered Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"The Role of UI/UX Design in Product Development","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"02","topic":"User Research and Analysis","descriptions":[{"desc":"Conducting User Research and Interviews","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing User Needs and Behavior","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating User Personas and Scenarios","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"03","topic":"Wireframing and Prototyping","descriptions":[{"desc":"Introduction to Wireframing Tools and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Creating Low-Fidelity Wireframes","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Prototyping and Interactive Mockups","lesson":"Lesson 03","time":"1 Hour"}]},{"number":"04","topic":"Visual Design and BrandingVisual Design and Branding","descriptions":[{"desc":"Color Theory and Typography in UI Design","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Visual Hierarchy and Layout Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating a Strong Brand Identity","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"05","topic":"Usability Testing and Iteration","descriptions":[{"desc":"Usability Testing Methods and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing Usability Test Results","lesson":"Lesson 02","time":"45 Minutes"},{"desc":"Iterating and Improving UX Designs","lesson":"Lesson 03","time":"45 Minutes"}]}],
+    "tags":[{"val": "01","cur":"HTML Fundamentals"},{"val": "02","cur":"CSS Styling and Layouts"},{"val": "03","cur":"JavaScript Basics"},{"val": "04","cur":"Building Responsive Websites"},{"val": "05","cur":"Introduction to Bootstrap and React"}],
      "id":5
     },
      {
      "name":"Advanced JavaScript",
+    "slug":"AdvanceJs",     
      "duration":"6 Weeks",
      "level":"Advance",
      "tutor":"By Jennifer Wilson",
      "details": "Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.",
      "image":"Imagecourse6.png",
+     
+      "img1":"ImageFRONT2.png",
+    "img2":"ImageMOBILE2.png",
+    "img3":"ImageUI3.png",
+     "courseOpen":"Advanced JavaScript Course",
+    "detail":"Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum",
+    "coursesDetails":[{"number":"01","topic":"Introduction to UI/UX Design","descriptions":[{"desc":"Understanding UI/UX Design Principles","lesson":"Lesson 01","time":"45 Minutes"},{"desc":"Importance of User-Centered Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"The Role of UI/UX Design in Product Development","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"02","topic":"User Research and Analysis","descriptions":[{"desc":"Conducting User Research and Interviews","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing User Needs and Behavior","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating User Personas and Scenarios","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"03","topic":"Wireframing and Prototyping","descriptions":[{"desc":"Introduction to Wireframing Tools and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Creating Low-Fidelity Wireframes","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Prototyping and Interactive Mockups","lesson":"Lesson 03","time":"1 Hour"}]},{"number":"04","topic":"Visual Design and BrandingVisual Design and Branding","descriptions":[{"desc":"Color Theory and Typography in UI Design","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Visual Hierarchy and Layout Design","lesson":"Lesson 02","time":"1 Hour"},{"desc":"Creating a Strong Brand Identity","lesson":"Lesson 03","time":"45 Minutes"}]},{"number":"05","topic":"Usability Testing and Iteration","descriptions":[{"desc":"Usability Testing Methods and Techniques","lesson":"Lesson 01","time":"1 Hour"},{"desc":"Analyzing Usability Test Results","lesson":"Lesson 02","time":"45 Minutes"},{"desc":"Iterating and Improving UX Designs","lesson":"Lesson 03","time":"45 Minutes"}]}],
+    "tags":[{"val": "01","cur":"Introduction to UI/UX Design"},{"val": "02","cur":"Wireframing and Prototyping"},{"val": "03","cur":"User Research and Personas"},{"val": "04","cur":"Visual Design and Branding"},{"val": "05","cur":"Usability Testing and Iteration"}],
      "id":6
     }
     ],
@@ -155,5 +204,42 @@
      "name":"Michael K",
      "id":4
     }
+  ],
+  "Achievements":[
+    {"achievementheader":"Trusted by Thousands",
+      "achievementdetail":"We have successfully served thousands of students, helping them unlock their potential and achieve their career goals.",
+      "image":"Icon Container.png"  
+  },
+    {"achievementheader":"Award-Winning Courses",
+      "achievementdetail":"Our courses have received recognition and accolades in the industry for their quality, depth of content, and effective teaching methodologies.",
+      "image":"Icon Container (1).png"  
+  },
+    {"achievementheader":"Positive Student Feedback",
+      "achievementdetail":"We take pride in the positive feedback we receive from our students, who appreciate the practicality and relevance of our course materials.",
+      "image":"Icon Container (2).png"  
+  },
+    {"achievementheader":"Industry Partnerships",
+      "achievementdetail":"We have established strong partnerships with industry leaders, enabling us to provide our students with access to the latest tools and technologies",
+      "image":"Icon Container (3).png"  
+  }
+  ],
+   "Goals":[
+    {"goalsheader":"Provide Practical Skills",
+      "goalsdetail":"We focus on delivering practical skills that are relevant to the current industry demands. Our courses are designed to equip learners with the knowledge and tools needed to excel in their chosen field.",
+      "image":"Icons Container.png"  
+  },
+    {"goalsheader":"Foster Creative Problem-Solving",
+      "goalsdetail":"We encourage creative thinking and problem-solving abilities, allowing our students to tackle real-world challenges with confidence and innovation.",
+      "image":"Icons Container (1).png"  
+  },
+    {"goalsheader":"Promote Collaboration and Community",
+      "goalsdetail":"We believe in the power of collaboration and peer learning. Our platform fosters a supportive and inclusive community where learners can connect, share insights, and grow together.",
+      "image":"Icons Container (2).png"  
+  },
+    {"goalsheader":"Stay Ahead of the Curve",
+      "goalsdetail":"The digital landscape is constantly evolving, and we strive to stay at the forefront of industry trends. We regularly update our course content to ensure our students receive the latest knowledge and skills.",
+      "image":"Icons Container (3).png"  
+  }
   ]
+  
 }

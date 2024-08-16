@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "data": [
+    {
+      "name": "sdfg",
+      "id": "37c4"
+    }
+  ],
+  "user": [
+    {
+      "id": "cffe",
+      "fullname": "qwertyu",
+      "email": "wsedrftyui@gmail.com",
+      "password": "qwertyu",
+      "terms": true
+    },
+    {
+      "id": "2b8c",
+      "fullname": "ertyuioiuytrrtyu",
+      "email": "wertyui@gmail.com",
+      "password": "123456789",
+      "terms": true
+    },
+    {
+      "id": "c6d4",
+      "fullname": "asdfghjkfdfghj",
+      "email": "asdfgh@gmail.com",
+      "password": "12345678765456",
+      "terms": true
+    }
+  ]
+}

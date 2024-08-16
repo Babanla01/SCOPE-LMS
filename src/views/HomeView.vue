@@ -77,6 +77,11 @@
             </div>
             <h3 class="course__name">{{ course.name }}</h3>
             <p class="course__detail">{{ course.details }}</p>
+            <p>
+              <span v-for="(tag, i) in course.tags" :key="i">{{
+                tag.val
+              }}</span>
+            </p>
             <button class="btn__block">Get it Now</button>
           </div>
         </div>
@@ -119,6 +124,7 @@
 <script>
 import sourceData from "@/data.json";
 export default {
+  components: {},
   data() {
     return {
       sponsors: sourceData.sponsors,

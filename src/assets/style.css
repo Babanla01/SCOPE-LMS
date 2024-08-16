@@ -78,7 +78,7 @@ input {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
-input{
+ input:not([type="checkbox"]){
     width: 100%;
 }
 body {
@@ -86,9 +86,9 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3, h4 {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
+h1, h2, h3, h4 ,h5 {
+    color: var(--title-color) !important;
+    font-weight: var(--font-medium) !important;
 }
 
 ul {
@@ -99,6 +99,9 @@ li{
 }
 
 a {
+    text-decoration: none;
+}
+a:hover{
     text-decoration: none;
 }
 
@@ -447,17 +450,18 @@ margin-bottom: var(--mb-3);
 }
 .course__tutor{
     font-size: var(--h4-font-size);
-    color: var(--title-color);
+    color: var(--title-color) !important;
     font-weight: var(--font-bold);
     white-space: nowrap;
 }
 .course__levels{
     display: flex;
     column-gap: .5rem;
+    color: var(--title-color);
 }
 .course__duration,
 .course__level{
-    border: 1px solid #ddd;
+    border: 2px solid var(--body-color);
     padding: .1rem .25rem;
     border-radius: .25rem;
     font-size: var(--small-font-size);
@@ -596,6 +600,253 @@ margin-bottom: var(--mb-3);
     display: flex;
     justify-content: center;
 }
+
+/* ======================= SIGN UP ==================== */
+/* .sigup__testimonials{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    height: 300px;
+    width: 600px;
+    overflow-y: hidden;
+} */
+.signup__container {
+  background-color:var(--container-color);
+  padding: 2rem 1.5rem;
+  border-radius: .5rem;
+}
+.signup {
+  grid-template-columns: 1.2fr 0.8fr;
+  column-gap: 7.5rem;
+  align-items: center;
+}
+.signup__testimonial-title{
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+.signup__testimonial-detail{
+    margin-bottom: var(--mb-1-5);
+}
+.sign__ups{
+    row-gap: 1.25rem;
+}
+.sign__ups-header,
+.sign__ups-details{
+    text-align: center;
+}
+.signup__form,
+.login__form {
+  row-gap: 1.5rem;
+}
+.inputs {
+  background-color: var(--body-color);
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+.forget__pass{
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    margin-top: var(--mb-1);
+}
+.checkbox__container{
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+.signup__container label{
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium); 
+}
+.password__container{
+    position: relative;
+}
+i.input__icon{
+    position: absolute;
+    display: block;
+    right: 1rem;
+    bottom:.5rem;
+    cursor: pointer;
+    color: var(--title-color);
+    font-size: 1.25rem;
+}
+.input__icons{
+    position: absolute;
+    display: block;
+    right: 1rem;
+    bottom:2.75rem;
+    cursor: pointer;
+    color: var(--title-color);
+    font-size: 1.25rem;
+}
+.hrs{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+.alt{
+    text-align: center;
+}
+
+/* ================== ABOUT US PAGE ================== */
+.skillbridge{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+.achievementss{
+    padding-top: 3rem;
+}
+.achievements{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    margin-top: var(--mb-3);
+}
+.achievement{
+    background-color: var(--container-color);
+    padding: 1.25rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+}
+.achievement h5{
+    margin-top: var(--mb-1);
+}
+.achievement__img{
+    width: 45px;
+}
+.skill__inovation{
+    grid-template-columns: 1.7fr .3fr;
+    align-items: center;
+    position: relative;
+    background-color: var(--container-color);
+    margin-top: var(--mb-3);
+    padding: 4rem 2rem ;
+    border-radius: .5rem;
+}
+.skill__img{
+    position: absolute;
+    left: 60%;
+    width: 275px;
+    z-index: 1;
+}
+.relat{
+    position: relative;
+    z-index: 5;
+}
+
+/* ================================ COURSE PAGE ===================== */
+.online__course{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 7rem;
+    row-gap: 2rem;
+}
+.course__grid{
+    row-gap: 1rem;
+}
+.cours__btn{
+    margin-bottom: var(--mb-2-5);
+    margin-top: var(--mb-1);
+}
+.jogo{
+    background-color: var(--container-color) !important;
+    padding: 2rem 2.5rem;
+    border-radius: .5rem;
+}
+.jogo p{
+ color: var(--title-color);
+}
+.cours__images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+}
+.curriculum{
+    border: 1px solid var(--body-color);
+    border-radius: .5rem;
+    /* padding: .5rem; */
+}
+.curriculum__grids{
+    padding: .75rem .25rem 1rem;
+}
+.curriculum__grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: var(--body-color);
+    gap: 1px;
+}
+.curriculums{
+    /* border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    background-color: var(--container-color);
+    padding: 0 1rem;
+}
+.curic{
+    border-bottom: 1px solid var(--body-color);
+    padding: .5rem .5rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+}
+/* .cours__img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+} */
+
+/* ===================== COURSE OPEN ==================== */
+.course__open{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.course__opens{
+    padding: 2.5rem 0 2rem;
+}
+.open__img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.lessons__container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.lessons{
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.lessson__tag{
+    text-align: end;
+}
+.lesson__topic{
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+.lesson__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--body-color);
+    padding: 1rem;
+    border-radius: .35rem;
+}
+.lesson__details:hover{
+    border: 1.5px solid red;
+}
+.lesson__grid{
+    row-gap: 1rem;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1200px) {
@@ -624,10 +875,20 @@ margin-bottom: var(--mb-3);
     .benefit__container{
         grid-template-columns: repeat(2,1fr);
     }
+    .contact{
+        padding: 5rem 1.5rem;
+    }
+    .contact__inputs,
+    .contact__address{
+        padding: 2rem 1.75rem;
+    }
+    .address__group p{
+        text-align: center;
+    }
 }
 
 /* For medium devices */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
     /* .container{
         max-width: 700px;
         margin: 0 auto;
@@ -656,6 +917,27 @@ margin-bottom: var(--mb-3);
     .nav{
         padding: 0 2rem;
     }
+    .contact__groups.grid{
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+    }
+     .contact__header{
+        row-gap: 1.5rem;
+     }
+     .contact__header h1,
+     .contact__header p{
+        text-align: center;
+     }
+     .contact__group textarea{
+        height: 120px;
+     }
+     .skill__img{
+        width: 250px;
+        left: 25%;
+     }
+     .jogo{
+        padding: 1rem;
+     }
 }
 
 /* For small devices */

@@ -43,6 +43,11 @@ const routes = [
     name: "LogIn",
     component: LogIn,
   },
+  {
+    path: "/courses/:id/:slug",
+    name: "/courses.show",
+    component: () => import("@/views/courseOpen.vue"),
+  },
 ];
 
 const router = createRouter({
