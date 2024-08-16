@@ -1,6 +1,15 @@
-<template></template>
+<template>
+  <main class="main section"></main>
+</template>
 <script>
-export default {};
+import sourceData from "@/data.json";
+export default {
+  data() {
+    return {
+      pricing: sourceData.pricing,
+    };
+  },
+};
 </script>
 
 <style>
