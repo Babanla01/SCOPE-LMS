@@ -25,11 +25,13 @@
                 class="lesson__details"
               >
                 <div>
-                  <p>{{ lesson.desc }}</p>
+                  <p class="lesson__desc">{{ lesson.desc }}</p>
                   <small>{{ lesson.lesson }}</small>
                 </div>
                 <div>
-                  <small>{{ lesson.time }}</small>
+                  <small class="lessson__time"
+                    ><i class="bi bi-clock"></i> {{ lesson.time }}</small
+                  >
                 </div>
               </div>
             </div>

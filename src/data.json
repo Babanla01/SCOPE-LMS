@@ -240,6 +240,11 @@
       "goalsdetail":"The digital landscape is constantly evolving, and we strive to stay at the forefront of industry trends. We regularly update our course content to ensure our students receive the latest knowledge and skills.",
       "image":"Icons Container (3).png"  
   }
+  ],
+  "pricing":[
+    
+    {"plan":"Free Plan" ,"price":"","features":[{"feature":"Access to selected free courses.","access":true},{"feature":"Limited course materials and resources.","access":true},{"feature":"Basic community support.","access":true},{"feature":"No certification upon completion.","access":true},{"feature":"Ad-supported platform.","access":true},{"feature":"Access to exclusive Pro Plan community forums.","access":false},{"feature":"Early access to new courses and updates.","access":false}]},
+    {"plan":"Pro Plan" ,"price":"","features":[{"feature":"Unlimited access to all courses.","access":true},{"feature":"Unlimited course materials and resources.","access":true},{"feature":"Priority support from instructors.","access":true},{"feature":"Course completion certificates.","access":true},{"feature":"Ad-free experience.","access":true},{"feature":"Access to exclusive Pro Plan community forums.","access":true},{"feature":"Early access to new courses and updates.","access":false}]}
   ]
   
 }

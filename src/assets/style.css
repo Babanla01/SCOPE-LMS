@@ -14,6 +14,8 @@
     --text-color: hsl(250, 8%, 35%);
     --body-color: hsl(240, 7%, 97%);
     --container-color: #fff;
+    --orange-90: hsl(35, 100%, 90%);
+
     --shadow: hsla(0, 0%, 15%, .1);
     --scroll-bar-color: hsl(250, 12%, 90%);
     --scroll-thumb-color: hsl(250, 12%, 80%);
@@ -815,10 +817,12 @@ i.input__icon{
     width: 100%;
     height: 400px;
     object-fit: cover;
+    border-radius: .5rem;
 }
 .lessons__container{
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
+    margin-top: var(--mb-3);
 }
 .lessons{
     background-color: var(--container-color);
@@ -837,15 +841,30 @@ i.input__icon{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid var(--body-color);
+    border: 3px solid var(--body-color);
     padding: 1rem;
     border-radius: .35rem;
+    cursor: pointer;
+    transition: .2s
 }
 .lesson__details:hover{
-    border: 1.5px solid red;
+    border: 3px solid var(--orange-90);
+}
+.lesson__details:hover .lessson__time{
+    background-color: var(--orange-90);
 }
 .lesson__grid{
     row-gap: 1rem;
+}
+.lesson__desc{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+.lessson__time{
+    white-space: nowrap;
+    background-color: var(--white-95);
+    padding: .25rem;
+    border-radius: .25rem;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
@@ -900,6 +919,15 @@ i.input__icon{
     .benefit__details{
         flex-direction: column;
     }
+    .lessons__container{
+        grid-template-columns: 1fr;
+    }
+    .course__open{
+        row-gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+
+  
 }
 
 @media screen and (max-width: 576px) {
@@ -938,6 +966,11 @@ i.input__icon{
      .jogo{
         padding: 1rem;
      }
+       .lesson__details{
+        row-gap: .5rem;
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
 /* For small devices */
