@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main class="main section">
+    <main class="main section heros">
       <div class="grid course__open">
         <h2>{{ courses.courseOpen }}</h2>
         <p>{{ courses.detail }}</p>

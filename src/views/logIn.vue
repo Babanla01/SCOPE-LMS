@@ -1,5 +1,5 @@
 <template>
-  <main class="main section">
+  <main class="main section heros">
     <section class="sign__up">
       <div class="signup grid">
         <div class="signup__testimonial">

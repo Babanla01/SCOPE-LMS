@@ -1,5 +1,5 @@
 <template>
-  <main class="main section">
+  <main class="main section heros">
     <section class="hero">
       <h1 class="hero__heading">
         <span class="hero__bg">
@@ -17,15 +17,18 @@
         <button class="button btn__primary">Explore Courses</button>
         <button class="button btn__white">View Pricing</button>
       </div>
-      <marquee behavior="scroll"> </marquee>
-      <div class="sponsors">
-        <div v-for="sponsor in sponsors" :key="sponsor.id" class="sponsor">
-          <img
-            :src="`/images/${sponsor.image}`"
-            :alt="sponsor.name"
-            class="sponsor__img"
-          />
-        </div>
+      <div class="marques">
+        <marquee behavior="scroll">
+          <div class="sponsors">
+            <div v-for="sponsor in sponsors" :key="sponsor.id" class="sponsor">
+              <img
+                :src="`/images/${sponsor.image}`"
+                :alt="sponsor.name"
+                class="sponsor__img"
+              />
+            </div>
+          </div>
+        </marquee>
       </div>
       <div class="hero__video-box">
         <img src="/images/ContainerheroImg.png" alt="" class="hero__video" />
@@ -112,14 +115,19 @@
           </div>
         </div>
       </div>
+      <Pricing />
+      <FAQS />
     </section>
   </main>
 </template>
 
 <script>
 import sourceData from "@/data.json";
+import Pricing from "@/components/Pricing.vue";
+import FAQS from "@/components/FQuestions.vue";
+
 export default {
-  components: {},
+  components: { Pricing, FAQS },
   data() {
     return {
       sponsors: sourceData.sponsors,

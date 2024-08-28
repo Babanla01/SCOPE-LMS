@@ -1,5 +1,5 @@
 <template>
-  <main class="main section">
+  <main class="main section heros">
     <div class="online__course grid">
       <h3>Online Courses on Design and Development</h3>
       <div>
@@ -14,10 +14,10 @@
     </div>
     <hr />
     <div class="course__grid grid">
-      <router-link
+      <div
         v-for="course in courses"
         :key="course.id"
-        class="jogo"
+        class="course__id"
         :to="{
           name: '/courses.show',
           params: { id: course.id, slug: course.slug },
@@ -26,7 +26,16 @@
         <h3>{{ course.name }}</h3>
         <div class="cours__details">
           <p>{{ course.details }}</p>
-          <button class="button btn__secondary cours__btn">View Course</button>
+          <router-link
+            :to="{
+              name: '/courses.show',
+              params: { id: course.id, slug: course.slug },
+            }"
+          >
+            <button class="button btn__secondary cours__btn">
+              View Course
+            </button></router-link
+          >
         </div>
         <div class="cours__images">
           <img :src="`/images/${course.img1}`" alt="" class="cours__img" />
@@ -57,7 +66,7 @@
             </div>
           </div>
         </div>
-      </router-link>
+      </div>
     </div>
   </main>
 </template>

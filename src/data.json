@@ -242,9 +242,19 @@
   }
   ],
   "pricing":[
+
+    {"plan":"Free Plan" ,"price1":"0", "price2":"36","monthly":true,"yearly":false,"features":[{"feature":"Access to selected free courses.","access":true},{"feature":"Limited course materials and resources.","access":true},{"feature":"Basic community support.","access":true},{"feature":"No certification upon completion.","access":true},{"feature":"Ad-supported platform.","access":true},{"feature":"Access to exclusive Pro Plan community forums.","access":false},{"feature":"Early access to new courses and updates.","access":false}]},
+    {"plan":"Pro Plan" ,"price1":"36","price2":"160","monthly":true,"yearly":false,"features":[{"feature":"Unlimited access to all courses.","access":true},{"feature":"Unlimited course materials and resources.","access":true},{"feature":"Priority support from instructors.","access":true},{"feature":"Course completion certificates.","access":true},{"feature":"Ad-free experience.","access":true},{"feature":"Access to exclusive Pro Plan community forums.","access":true},{"feature":"Early access to new courses and updates.","access":true}]}
+  ],
+
+  "Accordion":[{"header":"Can I enroll in multiple courses at once?","content":"Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.","link":"Enrollment Process for Different Courses"},{"header":"What kind of support can I expect from instructors?","content":"Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.","link":"Enrollment Process for Different Courses"},{"header":"Are the courses self-paced or do they have specific start and end dates?","content":"Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.","link":"Enrollment Process for Different Courses"},{"header":"Are there any prerequisites for the courses?","content":"Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.","link":"Enrollment Process for Different Courses"},{"header":"Can I download the course materials for offline access?","content":"Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.","link":"Enrollment Process for Different Courses"}],
+  "routes":[
+    {"name":"Home" , "path":"/","skip": "01"},
+    {"name":"Courses" , "path":"/Courses","skip": "01"},
+    {"name":"About Us" , "path":"/aboutUs","skip": "01"},
+    {"name":"Pricing" , "path":"/Pricing","skip": "01"},
+    {"name":"Contact" , "path":"/Contact","skip": "01"}
     
-    {"plan":"Free Plan" ,"price":"","features":[{"feature":"Access to selected free courses.","access":true},{"feature":"Limited course materials and resources.","access":true},{"feature":"Basic community support.","access":true},{"feature":"No certification upon completion.","access":true},{"feature":"Ad-supported platform.","access":true},{"feature":"Access to exclusive Pro Plan community forums.","access":false},{"feature":"Early access to new courses and updates.","access":false}]},
-    {"plan":"Pro Plan" ,"price":"","features":[{"feature":"Unlimited access to all courses.","access":true},{"feature":"Unlimited course materials and resources.","access":true},{"feature":"Priority support from instructors.","access":true},{"feature":"Course completion certificates.","access":true},{"feature":"Ad-free experience.","access":true},{"feature":"Access to exclusive Pro Plan community forums.","access":true},{"feature":"Early access to new courses and updates.","access":false}]}
   ]
   
 }

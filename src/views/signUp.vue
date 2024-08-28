@@ -1,5 +1,5 @@
 <template>
-  <main class="main section">
+  <main class="main section heros">
     <section class="sign__up">
       <div class="signup grid">
         <div class="signup__testimonial">
@@ -23,7 +23,7 @@
             <form
               action=""
               class="signup__form grid"
-              @submit.prevent="handleSubmit"
+              @submit.prevent="handleLogin"
             >
               <div class="input__container">
                 <label for="" class="labels">Full Name:</label>
@@ -33,7 +33,7 @@
                   placeholder="Enter your Name"
                   v-model="fullname"
                 />
-                <p>{{ fullname }}</p>
+                <p ref="fullerrorr"></p>
               </div>
               <div class="input__container">
                 <label for="" class="labels">Email:</label>
@@ -43,6 +43,7 @@
                   placeholder="Enter your Email"
                   v-model="email"
                 />
+                <p ref="emailerrror"></p>
               </div>
               <div class="input__container password__container">
                 <label for="" class="labels">Password:</label>
@@ -99,10 +100,24 @@ export default {
       email: "",
       password: "",
       terms: false,
+      isValid: true,
+      user: [],
+      fullnames: [],
+      emails: [],
     };
   },
   methods: {
-    async handleSubmit() {
+    async getData() {
+      try {
+        const res = await axios.get(`http://localhost:3000/user`);
+        this.user = res.data;
+        // this.checkFullname();
+        // console.log(this.user);
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    async saveData() {
       try {
         const formInputs = {
           fullname: this.fullname,
@@ -135,9 +150,69 @@ export default {
         });
       }
     },
+    isValidEmail(email) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailPattern.test(email);
+    },
+    handleLogin() {
+      this.validateFullname();
+      this.validateEmail();
+      if (this.isValid) {
+        this.saveData();
+      } else {
+        swal.fire({
+          icon: "error",
+          title: "error",
+          text: "error code",
+        });
+
+        // location.reload();
+      }
+    },
+    validateFullname() {
+      if (this.fullname === "") {
+        // alert("please fill up this field");
+        this.$refs.fullerrorr.textContent = "please fill up this field";
+        this.isValid = false;
+      } else if (this.fullname.length < 7) {
+        this.$refs.fullerrorr.textContent = "please fill up this field";
+        this.isValid = false;
+      } else if (this.checkFullname(this.fullname)) {
+        this.$refs.fullerrorr.textContent = "Name already exist";
+        this.isValid = false;
+      }
+    },
+    validateEmail() {
+      if (this.email === "") {
+        this.$refs.emailerrror.textContent = "please fill up this field";
+        this.isValid = false;
+      } else if (!this.isValidEmail(this.email)) {
+        this.$refs.emailerrror.textContent = "input a valid email";
+        this.isValid = false;
+      } else if (this.checkEmail(this.email)) {
+        this.$refs.emailerrror.textContent = "Email already exist";
+        this.isValid = false;
+      }
+    },
+    checkFullname(fullname) {
+      // this.user.forEach((user) => console.log(user.fullname));
+      this.user.forEach((user) => {
+        this.fullnames.push(user.fullname);
+      });
+
+      return this.fullnames.includes(fullname);
+    },
+    checkEmail(email) {
+      this.user.forEach((user) => {
+        this.emails.push(user.email);
+      });
+
+      return this.emails.includes(email);
+    },
   },
   mounted() {
-    this.handleSubmit;
+    // this.saveData;
+    this.getData();
   },
 };
 </script>

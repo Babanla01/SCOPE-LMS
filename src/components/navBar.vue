@@ -9,8 +9,8 @@
     <nav class="nav">
       <div class="navigations">
         <img src="/images/Logologo.png" alt="" class="logo__img" />
-        <div class="nav__menu">
-          <router-link to="/"><li class="nav__item">Home</li></router-link>
+        <div class="nav__menu" ref="nav__menu">
+          <!-- <router-link to="/"><li class="nav__item">Home</li></router-link>
           <router-link to="/Courses"
             ><li class="nav__item">Courses</li></router-link
           >
@@ -22,7 +22,16 @@
           >
           <router-link to="/Contact"
             ><li class="nav__item">Contact</li></router-link
+          > -->
+          <li
+            v-for="(routes, index) in routers"
+            :key="index"
+            class="nav__item"
+            @click="closeNav"
           >
+            <router-link :to="routes.path">{{ routes.name }}</router-link>
+          </li>
+          <i class="bi bi-x-lg close" @click="close"></i>
         </div>
       </div>
       <div class="nav__btns">
@@ -32,6 +41,9 @@
         <router-link to="/LogIn"
           ><button class="button btn__primary">Login</button></router-link
         >
+        <div class="nav__toggle">
+          <i class="bi bi-menu-down" @click="openMenu"></i>
+        </div>
       </div>
     </nav>
   </header>
@@ -39,7 +51,26 @@
 
 
 <script>
-export default {};
+import sourceData from "@/data.json";
+export default {
+  data() {
+    return {
+      routers: sourceData.routes,
+    };
+  },
+
+  methods: {
+    openMenu() {
+      this.$refs.nav__menu.classList.toggle("active");
+    },
+    close() {
+      this.$refs.nav__menu.classList.toggle("active");
+    },
+    closeNav() {
+      this.$refs.nav__menu.classList.remove("active");
+    },
+  },
+};
 </script>
 
 <style>

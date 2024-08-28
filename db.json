@@ -34,24 +34,171 @@
   ],
   "user": [
     {
-      "id": "cffe",
-      "fullname": "qwertyu",
-      "email": "wsedrftyui@gmail.com",
-      "password": "qwertyu",
+      "id": "fdbd",
+      "fullname": "abcd",
+      "email": "leonard@gmail.com",
+      "password": "1234567",
       "terms": true
     },
     {
-      "id": "2b8c",
-      "fullname": "ertyuioiuytrrtyu",
-      "email": "wertyui@gmail.com",
-      "password": "123456789",
+      "id": "acac",
+      "fullname": "12345",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "a0bb",
+      "fullname": "1234567890",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "cf89",
+      "fullname": "12345",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "c314",
+      "fullname": "1",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "0512",
+      "fullname": "as",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "7502",
+      "fullname": "asd",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "bb28",
+      "fullname": "1223",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "a0dd",
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "b81a",
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "0b61",
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "b458",
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "d3ad",
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "c096",
+      "fullname": "s",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "6cf1",
+      "fullname": "ass",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "853a",
+      "fullname": "sa",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "0014",
+      "fullname": "1",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "d33d",
+      "fullname": "12453456",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "7ba6",
+      "fullname": "axasasas",
+      "email": "",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "e75e",
+      "fullname": "mahammud",
+      "email": "mahammudabolaji@gmail.com",
+      "password": "1234567",
       "terms": true
     },
     {
-      "id": "c6d4",
-      "fullname": "asdfghjkfdfghj",
-      "email": "asdfgh@gmail.com",
-      "password": "12345678765456",
+      "id": "6ce3",
+      "fullname": "1234567890",
+      "email": "mahammud@gmail.com",
+      "password": "",
+      "terms": false
+    },
+    {
+      "id": "54ec",
+      "fullname": "mahammud",
+      "email": "mahammud@gmail.com",
+      "password": "1234567",
+      "terms": true
+    },
+    {
+      "id": "bec0",
+      "fullname": "mahammuds",
+      "email": "mahammud@gmail.com",
+      "password": "123456",
+      "terms": true
+    },
+    {
+      "id": "3e9a",
+      "fullname": "Hassanat",
+      "email": "hassanat@gmail.com",
+      "password": "1234567",
       "terms": true
     }
   ]

@@ -1,5 +1,5 @@
 <template>
-  <main class="main section">
+  <main class="main section heros">
     <div class="skillbridge grid">
       <h1>About Skillbridge</h1>
       <div class="skill__details">
