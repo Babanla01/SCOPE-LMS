@@ -42,7 +42,9 @@
           ><button class="button btn__primary">Login</button></router-link
         >
         <div class="nav__toggle">
-          <i class="bi bi-menu-down" @click="openMenu"></i>
+          <i class="bi bi-list" @click="openMenu"></i>
+          <!-- <i class="bi bi-three-dots-vertical"></i> -->
+          <!-- <i class="bi bi-list"></i> -->
         </div>
       </div>
     </nav>
@@ -68,6 +70,7 @@ export default {
     },
     closeNav() {
       this.$refs.nav__menu.classList.remove("active");
+      // window.reload();
     },
   },
 };

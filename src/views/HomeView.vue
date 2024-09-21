@@ -14,11 +14,15 @@
         Learn from Industry Experts and Enhance Your Skills.
       </p>
       <div class="hero__btns">
-        <button class="button btn__primary">Explore Courses</button>
-        <button class="button btn__white">View Pricing</button>
+        <router-link to="/Courses">
+          <button class="button btn__primary">Explore Courses</button>
+        </router-link>
+        <router-link to="/Pricing">
+          <button class="button btn__white">View Pricing</button>
+        </router-link>
       </div>
       <div class="marques">
-        <marquee behavior="scroll">
+        <marquee ref="marque" behavior="scroll" direction="left">
           <div class="sponsors">
             <div v-for="sponsor in sponsors" :key="sponsor.id" class="sponsor">
               <img
@@ -66,7 +70,9 @@
             elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum
             eget habitasse in velit fringilla feugiat senectus in.
           </p>
-          <button class="button btn__white">View All</button>
+          <router-link to="/Courses">
+            <button class="button btn__white">View All</button></router-link
+          >
         </div>
         <div class="course__container grid">
           <div v-for="course in courses" :key="course.id" class="course__item">
@@ -80,7 +86,14 @@
             </div>
             <h3 class="course__name">{{ course.name }}</h3>
             <p class="course__detail">{{ course.details }}</p>
-            <button class="btn__block">Get it Now</button>
+            <router-link
+              :to="{
+                name: '/courses.show',
+                params: { id: course.id, slug: course.slug },
+              }"
+            >
+              <button class="btn__block">Get it Now</button></router-link
+            >
           </div>
         </div>
       </div>

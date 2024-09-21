@@ -248,6 +248,15 @@ input {
 .nav__toggle{
     display: none;
 }
+.nav__menu i{
+    cursor: pointer;
+}
+.nav__toggle i{
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
 .close{
     display: none;
     font-size: 1.75rem;
@@ -290,6 +299,9 @@ input {
     color: var(--title-color);
 }
 .link__heading{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
     margin-bottom: var(--mb-0-5);
     white-space: nowrap;
 }
@@ -386,7 +398,7 @@ white-space: nowrap;
     justify-content: center;
     align-items: center;
     background-color: var(--container-color);
-    padding: 1.35rem;
+    /* padding: 1.35rem; */
 }
 .sponsor:last-child{
     /* padding:.39rem; */
@@ -477,7 +489,7 @@ margin-bottom: var(--mb-3);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-bottom: var(--mb-1);
     margin-top: var(--mb-1);
 }
@@ -486,6 +498,7 @@ margin-bottom: var(--mb-3);
     color: var(--title-color) !important;
     font-weight: var(--font-bold);
     white-space: nowrap;
+    margin-top: var(--mb-1);
 }
 .course__levels{
     display: flex;
@@ -1155,6 +1168,16 @@ row-gap: .75rem;
     .lessons__container{
         grid-template-columns: 1fr;
     }
+    .sponsors{
+        gap: 1rem;
+    }
+    .sponsor{
+        padding:.5rem;
+    }
+    .sponsor:last-child{
+        display: none;
+    }
+    
     .course__open,
     .contact__container{
         row-gap: 1.5rem;
@@ -1180,6 +1203,17 @@ row-gap: .75rem;
     .accordion__link{
         padding: .5rem;
     }
+     .course__descriptions{
+        flex-direction: column;
+        align-items: start;
+        row-gap: .5rem;
+     }
+     .course__tutor{
+        margin-top: 0;
+     }
+     .testimony__data{
+        padding: .75rem;
+     }
 
   
 }
@@ -1194,10 +1228,13 @@ row-gap: .75rem;
         margin: 0 auto;
     } */
     .hero__heading{
-        font-size: var(--h2-font-size);
+        font-size: var(--h3-font-size);
+    }
+    .hero__flash{
+        width: 40px;
     }
     .nav{
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
     .contact__inputs,
     .contact__address{
@@ -1220,6 +1257,7 @@ row-gap: .75rem;
      .course__id{
         padding: 1rem;
      }
+    
        .lesson__details{
         row-gap: .5rem;
         flex-direction: column;

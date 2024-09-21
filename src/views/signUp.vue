@@ -55,6 +55,7 @@
                 />
                 <i class="bi bi-eye-slash input__icon"></i>
               </div>
+              <p ref="passerror"></p>
               <div class="input__container checkbox__container">
                 <input type="checkbox" v-model="terms" />
                 <label for="" class="labels"
@@ -157,6 +158,7 @@ export default {
     handleLogin() {
       this.validateFullname();
       this.validateEmail();
+      this.validatePass();
       if (this.isValid) {
         this.saveData();
       } else {
@@ -192,6 +194,15 @@ export default {
       } else if (this.checkEmail(this.email)) {
         this.$refs.emailerrror.textContent = "Email already exist";
         this.isValid = false;
+      }
+    },
+    validatePass() {
+      if (this.password === "") {
+        this.$refs.passerror.textContent = "this field cant be empty";
+        return (this.isValid = false);
+      } else if (this.password.length < 8) {
+        this.$refs.passerror.textContent =
+          "password must be at least 8 character";
       }
     },
     checkFullname(fullname) {

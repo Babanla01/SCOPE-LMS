@@ -23,7 +23,7 @@
             <form
               action=""
               class="login__form grid"
-              @submit.prevent="fetchUser"
+              @submit.prevent="handleLogin"
             >
               <div class="input__container">
                 <label for="" class="labels">Email:</label>
@@ -79,6 +79,7 @@
 import Testimony from "@/components/Testimony.vue";
 import axios, { Axios } from "axios";
 import swal from "sweetalert2";
+import router from "@/router";
 export default {
   name: "login",
   components: { Testimony },
@@ -86,53 +87,83 @@ export default {
     return {
       email: "",
       password: "",
-      user: [],
+      isValid: true,
+      User: [],
+      emails: [],
+      passwords: [],
     };
   },
   methods: {
     async fetchUser() {
       try {
-        // let newEmail = [];
         const response = await axios.get(`http://localhost:3000/user`);
-        this.user = response.data;
-        let newData = this.user.forEach((item) => {
-          let newEmail = item.email;
-          if (this.email === newEmail) {
-            swal
-              .fire({
-                icon: "success",
-                title: "success",
-                text: "done",
-              })
-              .then(() => {
-                location.reload();
-              });
-          }
-          // console.log(newEmail);
-        });
-        console.log(newEmail);
-
-        console.log("this is newdata", newData);
-        for (let i = 0; i < this.user.length; i++) {
-          const element = this.user[i];
-          // console.log(element.email);
-          let newBie = new Array(element.email);
-          let inputEmail = this.email;
-          if (newBie.includes(inputEmail)) {
-            console.log("success");
-          } else {
-            console.log("error");
-          }
-        }
-
-        console.log(this.user);
+        this.User = response.data;
+        // swal
+        //   .fire({
+        //     icon: "success",
+        //     title: "success",
+        //     text: "done",
+        //   })
+        //   .then(() => {
+        //     location.reload();
+        //   });
       } catch (error) {
         console.log("erroe= " + error);
       }
     },
+    handleLogin() {
+      if (this.checkEmail(this.email) && this.checkPass(this.password)) {
+        swal
+          .fire({
+            icon: "success",
+            title: "LOGIN SUCCESSFUL",
+            text: "DONE",
+          })
+          .then(() => {
+            router.push("/");
+          });
+      } else if (this.checkEmail(this.email) || this.checkPass(this.password)) {
+        swal
+          .fire({
+            icon: "error",
+            title: "Invalid Email / Password ",
+            text: "Check Your Details",
+          })
+          .then(() => {
+            location.reload();
+          });
+      } else if (!this.checkEmail(this.email) && !this.checkPass(this.pass)) {
+        swal
+          .fire({
+            icon: "error",
+            title: "Invalid Email & Password ",
+            text: "Sign Up",
+          })
+          .then(() => {
+            router.push("/SignUp");
+          });
+      }
+    },
+
+    checkEmail(email) {
+      this.User.forEach((user) => {
+        this.emails.push(user.email);
+      });
+
+      return this.emails.includes(email);
+    },
+    checkPass(pass) {
+      this.User.forEach((user) => {
+        this.passwords.push(user.password);
+      });
+
+      return this.passwords.includes(pass);
+    },
   },
   mounted() {
-    this.fetchUser;
+    this.fetchUser();
+    // this.checkEmail;
+    // this.checkPass;
   },
 };
 </script>

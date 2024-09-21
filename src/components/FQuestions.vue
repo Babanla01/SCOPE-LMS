@@ -23,7 +23,7 @@
                 :class="{ 'bi-plus': !isOpen(index), 'bi-dash': isOpen(index) }"
               ></i>
             </div>
-            <div v-if="isOpen(index)">
+            <div v-if="isOpen(index)" class="accordion__contents">
               <div class="accordion__content">
                 <p>{{ accordion.content }}</p>
                 <a href="" class="accordion__link"

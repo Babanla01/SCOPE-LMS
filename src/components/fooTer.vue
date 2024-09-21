@@ -19,7 +19,7 @@
       </div>
       <div class="footer__links grid">
         <div class="footer__link">
-          <h3 class="link__heading">Home</h3>
+          <p class="link__heading">Home</p>
           <div class="links">
             <li><a href="">Benefits</a></li>
             <li><a href="">Our Courses</a></li>
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="footer__link">
-          <h3 class="link__heading">About Us</h3>
+          <p class="link__heading">About</p>
           <div class="links">
             <li><a href="">Company</a></li>
             <li><a href="">Achievements</a></li>
@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="socials">
-          <h3 class="link__heading">Social Profiles</h3>
+          <p class="link__heading">Socialprofiles</p>
           <div class="social">
             <div class="social__box"><i class="bi bi-facebook"></i></div>
             <div class="social__box"><i class="bi bi-twitter-x"></i></div>

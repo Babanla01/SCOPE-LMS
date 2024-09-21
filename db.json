@@ -200,6 +200,55 @@
       "email": "hassanat@gmail.com",
       "password": "1234567",
       "terms": true
+    },
+    {
+      "id": "a7b0",
+      "fullname": "abdulbasit",
+      "email": "abdulbasit@gmail.com",
+      "password": "12345678",
+      "terms": true
+    },
+    {
+      "id": "a18b",
+      "fullname": "mayowaibile",
+      "email": "mayowa@gmail.com",
+      "password": "12345678",
+      "terms": true
+    },
+    {
+      "id": "158d",
+      "fullname": "do you ",
+      "email": "Ajenifujaayol@gmail.com",
+      "password": "12345678",
+      "terms": true
+    },
+    {
+      "id": "3710",
+      "fullname": "peperito",
+      "email": "peperito@gmail.com",
+      "password": "12345678",
+      "terms": true
+    },
+    {
+      "id": "7417",
+      "fullname": "oladeji Olayinka",
+      "email": "olayinka@gmail.com",
+      "password": "123456789",
+      "terms": true
+    },
+    {
+      "id": "6267",
+      "fullname": "corperT",
+      "email": "corperT@gmail.com",
+      "password": "12345678",
+      "terms": true
+    },
+    {
+      "id": "61c2",
+      "fullname": "sumteck",
+      "email": "sumteck@gmail.com",
+      "password": "12345678",
+      "terms": true
     }
   ]
 }
